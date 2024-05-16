@@ -6,9 +6,8 @@ This application is used to reactjs. It is responsive and can be used on any dev
 When in pc, display the left products list and the right product details. When in mobile, display the product detail in a modal.
 
 ### Components
-Rate: Display the rate of the product. It is a star rating component.
-
 ProductList: Display the list of products. It is a list of ProductItem.
 
 ProductDetail: Display the details of the product. 
 
+Rate: Display the rate of the product. It is a star rating component.

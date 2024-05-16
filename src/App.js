@@ -2,7 +2,7 @@ import './App.css';
 import {useState, useEffect} from 'react';
 import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
-
+import {BsXLg} from 'react-icons/bs';
 function App() {
   const [products, setProducts] = useState([]); // List of products
   const [loading, setLoading] = useState(false);    // Whether the data is being loaded
@@ -42,8 +42,22 @@ return (
                         <ProductDetail product={activeProduct}/>
                     </div>
                 </main>
+                {/* mobile */}
+                <div className={'detail-mobile'} style={{
+                    bottom: activeProduct ? 0 : '-100%'
+                }}>
+                    <div className={'detail-action'}>
+                        <button onClick={() => {
+                            setActiveProduct(null);
+                        }} className={'close-button'}>
+                            <BsXLg/>
+                        </button>
+                    </div>
+                    <ProductDetail product={activeProduct}/>
+                </div>
             </>
         )}
+        
     </div>
   </div>
 );

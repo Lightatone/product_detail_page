@@ -1,0 +1,14 @@
+.stars {
+    display: flex;
+    gap: 5px;
+}
+.star {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.rate-count {
+    font-size: 1.2rem;
+    color: #777;
+    margin-left: 5px;
+}
