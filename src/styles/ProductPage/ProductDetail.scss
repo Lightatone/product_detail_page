@@ -1,0 +1,39 @@
+.product-detail {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .product-price {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    .product-description {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .product-cart-button {
+        text-align: center;
+
+        button {
+            margin-top: 100px;
+            width: 200px;
+            color: rgb(255, 255, 255);
+            background-color: #007bff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;  // Fixed duplicate border-radius property
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: rgb(70, 91, 112);
+            }
+        }
+    }
+}

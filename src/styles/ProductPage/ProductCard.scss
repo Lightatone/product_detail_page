@@ -1,0 +1,38 @@
+.product-item {
+    display: flex;
+    background: beige;
+    padding: 10px;
+    align-items: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 10px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .product-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: auto;
+        cursor: pointer;
+    }
+}
+
+.chevron-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 38px;
+    transition: transform 0.3s, font-size 0.3s;
+
+    .icon {
+        transition: transform 0.3s ease;
+    }
+
+    &.active .icon {
+        transform: rotate(180deg);
+    }
+}

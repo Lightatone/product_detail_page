@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard';
-import './ProductList.css';
+import '../styles/ProductPage/ProductList.scss';
 
 export default function ProductList({products, onSelect, activeProduct}) {
   return (

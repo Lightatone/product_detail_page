@@ -1,5 +1,5 @@
 import {FaStar} from 'react-icons/fa';
-import './Rate.css';
+import '../styles/ProductPage/Rate.scss';
 
 export default function Rate({rate, count}) {
 

@@ -1,4 +1,4 @@
-import './ProductDetail.css';
+import '../styles/ProductPage/ProductDetail.scss';
 import Rate from "./Rate";
 export default function ProductDetail({product}) {
     if (!product) {

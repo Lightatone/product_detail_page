@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.css';
+import './styles/main.scss';
 import {useState, useEffect} from 'react';
 import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
