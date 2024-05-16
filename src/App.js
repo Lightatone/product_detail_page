@@ -1,4 +1,3 @@
-// import './App.css';
 import './styles/main.scss';
 import {useState, useEffect} from 'react';
 import ProductList from "./components/ProductList";
@@ -7,9 +6,9 @@ import {BsXLg} from 'react-icons/bs';
 function App() {
   const [products, setProducts] = useState([]); // List of products
   const [loading, setLoading] = useState(false);    // Whether the data is being loaded
-  const [activeProduct, setActiveProduct] = useState(null); // null or product
+  const [activeProduct, setActiveProduct] = useState(null); // State to hold the currently selected product, initially null
+
   useEffect(() => {
-    // Fetch products
       setLoading(true); // Set loading to true
       fetch(`https://fakestoreapi.com/products?limit=5`)
           .then(res => res.json())

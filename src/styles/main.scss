@@ -11,7 +11,7 @@
     padding: 0 10px;
     box-sizing: border-box;
   }
-  
+  // Define the main content area with a grid layout, two equal-width columns with a 20px gap
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,7 +25,6 @@
   .website-introduction {
     text-align: center;
   }
-  
   .detail {
     display: block;
   }
@@ -51,7 +50,8 @@
       background: black;
     }
   }
-  
+// Responsive design - adjust styles for devices with a maximum width of 767px 
+// Adjust the context
   @media (max-width: 767px) {
     .container {
       width: 100%;
@@ -78,13 +78,13 @@
       padding: 20px;
     }
   }
-  
+  // Responsive design - adjust styles for devices with a width between 768px and 1023px
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
       width: 90%;
     }
   }
-  
+  // Responsive design - adjust styles for devices with a width of 1024px and above
   @media (min-width: 1024px) {
     .container {
       width: 80%;
